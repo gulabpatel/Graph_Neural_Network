@@ -19,8 +19,7 @@ import torch_geometric
 print(torch_geometric.__version__)
 >>> '2.2.0'
 
-# Please download DGraphFin dataset file 'DGraphFin.zip' on our website 'https://dgraph.xinye.com' and place it under directory './dataset/raw'
-# Otherwise an error would pop out "Dataset not found. Please download 'DGraphFin.zip' from 'https://dgraph.xinye.com' and move it to './raw' "
+# Please download the DGraphFin dataset file 'DGraphFin.zip' from 'https://dgraph.xinye.com' and place it under the directory './dataset/raw'
 from torch_geometric.datasets import DGraphFin
 
 dataset = DGraphFin(root='./dataset')
@@ -29,12 +28,8 @@ data = dataset[0]
 data
 >>> Data(x=[3700550, 17], edge_index=[2, 4300999], y=[3700550], edge_type=[4300999], edge_time=[4300999], train_mask=[3700550], val_mask=[3700550], test_mask=[3700550])
 ```
-
-**Note:** Please download DGraphFin dataset file 'DGraphFin.zip' on our website 'https://dgraph.xinye.com' and place it under directory `'./dataset/raw'` before running the example, otherwise an error would pop out `"Dataset not found. Please download 'DGraphFin.zip' from 'https://dgraph.xinye.com' and move it to './raw' "`
-
 # Baselines
-
-This repo provides a collection of baselines of [DGraphFin](https://dgraph.xinye.com/dataset). Please download the dataset file on our [website](http://dgraph.xinye.com) and place it under the folder `'./dataset/DGraphFin/raw'`.  
+This repo provides a collection of baselines of [DGraphFin](https://dgraph.xinye.com/dataset). 
 
 ## Environments
 Implementing environment:  
