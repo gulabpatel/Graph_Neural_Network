@@ -101,5 +101,17 @@ Some examples include:
 
 
 <p align="center">
-<img src="./graphanalytics.jpg" width="300" alt="NLP Metrics Timeline"/>
+<img src="./graphanalytics.jpg" width="450" alt="NLP Metrics Timeline"/>
 </p>
+
+## [DGraph-Fin](https://dgraph.xinye.com/dataset#DGraph-Fin)
+DGraph-Fin is a directed, unweighted dynamic graph that represents a social network among users of Finvolution Group. In this graph, a node represents a [Finvolution user](https://ir.finvgroup.com/), and an edge from one user to another means that the user regards the other user as the emergency contact person
+**Label**: To better understand real-world financial scenarios, we classify the nodes as foreground nodes and background nodes. Foreground nodes are the ones that are labeled as normal (Class 0) and fraud (Class 1), which are also the nodes of our prediction task. Background nodes, on the other hand, are irrelevant to the task but play an important role in maintaining the connectivity of the graph.
+
+**Task**: The task of DGraph-Fin is to detect fraudulent users based on node features and graph structural information. This is a common task in financial scenarios. We randomly split the nodes into training/validation/test sets with a ratio of 70:15:15.
+
+**Evolving pattern**: Each edge in DGraph-Fin contains time information representing when the user filled in that emergency contact. To protect privacy, an encrypted timestamp is used to represent the time
+<p align="center">
+<img src="./GNN_Fintech.PNG" width="750" alt="DGraph-FIn"/>
+</p>
+
